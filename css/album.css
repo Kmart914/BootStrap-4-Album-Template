@@ -1,6 +1,4 @@
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
-}
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 
 .navbar {
   margin-bottom: 0;
@@ -11,12 +9,17 @@ body {
   border-bottom: 1px solid #55595c;
 }
 
+.navbar-toggler{
+  color: white;
+
+}
+
 .navbar-collapse h4 {
-  color: #818a91;
+  color: black;
 }
 
 .navbar-collapse .text-muted {
-  color: #818a91;
+  color: black;
 }
 
 .about {
@@ -27,25 +30,36 @@ body {
 
 .social a {
   font-weight: 500;
-  color: #eceeef;
+  color: black;
 }
 .social a:hover {
-  color: #fff;
+  color: gray;
 }
 
 .jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  /* padding-top: 6rem; */
+  /* padding-bottom: 6rem; */
   margin-bottom: 0;
-  background-color: #fff;
+  background-image: url("images/pexels.jpeg");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
 }
 
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
 
-.jumbotron-heading {
+h1, h3 {
+  position: relative;
   font-weight: 300;
+  font-weight: bold;
+  color: white;
+}
+
+h5 {
+  color: white;
 }
 
 .jumbotron .container {
@@ -56,7 +70,8 @@ body {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  background-image: url("images/shattered-island.gif");
+  height: 100vh;
 }
 
 .card {
@@ -67,21 +82,35 @@ body {
   border: 0;
 }
 
+.train-card, .gif-card, .hangman-card, .trivia-card, .employee-card, .crystal-card{
+height: 100%;
+width: 100%
+}
+
 .card > img {
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
 }
 
 .card-text {
   font-size: 85%;
+  color: white;
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  height: auto;
+  line-height: 1;
+}
+body {
+  line-height: normal;
+}
+footer, #footerContainer {
+  text-align: right;
+  padding-top: 5px;
+  background-color: black
 }
 
-footer p {
-  margin-bottom: .25rem;
+.btt {
+  color: white;
 }
 
 .inverse {
