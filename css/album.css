@@ -2,16 +2,19 @@
 
 .navbar {
   margin-bottom: 0;
+  background-color: black;
 }
 
 .navbar-collapse .container-fluid {
   padding: 2rem 2.5rem;
   border-bottom: 1px solid #55595c;
+  max-width: inherit;
 }
 
 .navbar-toggler{
   color: white;
-
+  float: left;
+  height: 50px;
 }
 
 .navbar-collapse h4 {
@@ -62,16 +65,25 @@ h5 {
   color: white;
 }
 
-.jumbotron .container {
-  max-width: 40rem;
+.jumbotron .container{
+  max-width: 100vh;
 }
 
-.album {
-  min-height: 50rem; /* Can be removed; just added for demo purposes */
-  padding-top: 3rem;
+#skills-container, #projects-container {
+  max-width: 80rem;
+}
+/*
+.projects {
+  min-height: 50rem;
+  margin-top: 3rem;
   padding-bottom: 3rem;
-  background-image: url("images/shattered-island.gif");
   height: 100vh;
+} */
+
+.skills {
+  min-height: 50rem;
+  margin-top: 10rem;
+  padding-bottom: 3rem;
 }
 
 .card {
@@ -80,6 +92,20 @@ h5 {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+}
+
+.skill {
+  float: left;
+  width: 20%;
+  padding: .75rem;
+  padding-bottom: 5rem;
+  border: 0;
+}
+
+.skills-header, .projects-header{
+  text-align: center;
+  color: white;
+  font-size: 25px;
 }
 
 .train-card, .gif-card, .hangman-card, .trivia-card, .employee-card, .crystal-card{
@@ -99,9 +125,12 @@ width: 100%
 footer {
   height: auto;
   line-height: 1;
+  margin-top: 2rem;
 }
 body {
   line-height: normal;
+  background-image: url("images/shattered-island.gif");
+
 }
 footer, #footerContainer {
   text-align: right;
